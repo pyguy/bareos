@@ -21,7 +21,7 @@ Images are based on **Ubuntu** or **Alpine**, check tags below
 
 * Ubuntu images for Bareos 16 and 17 are based on **Xenial**
 * Ubuntu images for Bareos 18+ are based on **Bionic**
-* Alpine images are available for **linux/amd64** and **linux/arm64/v8** platform
+* Alpine images are available for **linux/amd64** , **linux/arm64/v8** and **linux/arm/v7** platform
 
 ## Tags
 

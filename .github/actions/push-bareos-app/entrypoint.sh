@@ -33,11 +33,12 @@ while read build_app s_tag t_tag ; do
       "${GITHUB_REPOSITORY}-${build_app}:${t_tag}"
     docker push "${GITHUB_REPOSITORY}-${build_app}:${t_tag}"
   fi
-  # Create and push manifest for Alpuine (arm64 + amd64)
+  # Create and push manifest for Alpuine (arm64 + amd64 + arm)
   if [[ $s_tag =~ ^[0-9]+-alpine.*$ ]]; then
     docker manifest create "${GITHUB_REPOSITORY}-${build_app}:${t_tag}" \
       "${GITHUB_REPOSITORY}-${build_app}:${s_tag}-amd64" \
-      "${GITHUB_REPOSITORY}-${build_app}:${s_tag}-arm64"
+      "${GITHUB_REPOSITORY}-${build_app}:${s_tag}-arm64" \
+      "${GITHUB_REPOSITORY}-${build_app}:${s_tag}-arm"
     docker manifest push "${GITHUB_REPOSITORY}-${build_app}:${t_tag}"
   fi
 done < "${workdir}/tag_build.txt"
