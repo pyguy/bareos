@@ -1,6 +1,6 @@
 name: 'build-bareos-app'
 description: 'Build Bareos app images'
-author: 'Barcus'
+author: 'pyguy'
 runs:
   using: 'docker'
   image: 'Dockerfile'

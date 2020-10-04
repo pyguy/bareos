@@ -12,7 +12,7 @@ for file in $docker_files; do
 done
 
 # Connect Docker Hub
-docker login -u 'barcus' -p "${INPUT_DOCKER_PASS}"
+docker login -u 'pyguy' -p "${INPUT_DOCKER_PASS}"
 
 # Push images and manifests
 while read app version arch app_path ; do

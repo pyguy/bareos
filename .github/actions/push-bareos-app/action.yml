@@ -1,6 +1,6 @@
 name: 'push-bareos-app'
 description: 'Push Bareos docker images to Docker Hub'
-author: 'Barcus'
+author: 'pyguy'
 inputs:
   docker_pass:
     description: 'Docker Hub password'

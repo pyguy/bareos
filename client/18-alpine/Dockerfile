@@ -1,7 +1,7 @@
 # Dockerfile Bareos client/file daemon
 FROM alpine:3.12
 
-LABEL maintainer="barcus@tou.nu"
+LABEL maintainer="hr.josheghani@gmail.com"
 
 ARG BUILD_DATE
 ARG NAME

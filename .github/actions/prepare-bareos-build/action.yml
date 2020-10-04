@@ -1,6 +1,6 @@
 name: 'prepare-bareos-build'
 description: 'Prepare Bareos app build file'
-author: 'Barcus'
+author: 'pyguy'
 inputs:
   bareos_app:
     description: 'Bareos app name'
