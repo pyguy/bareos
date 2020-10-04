@@ -1,6 +1,7 @@
 # Bareos Web-ui Dockerfile
 FROM alpine:edge
 
+LABEL maintainer="hr.josheghani@gmail.com"
 
 RUN apk add --no-cache bareos-webui-nginx
 

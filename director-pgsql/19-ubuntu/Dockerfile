@@ -1,7 +1,7 @@
 # Bareos director Dockerfile
 FROM ubuntu:bionic
 
-LABEL maintainer="barcus@tou.nu"
+LABEL maintainer="hr.josheghani@gmail.com"
 
 ARG BUILD_DATE
 ARG NAME
